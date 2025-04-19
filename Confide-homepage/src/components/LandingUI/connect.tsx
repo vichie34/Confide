@@ -2,25 +2,25 @@ const features = [
     {
         title: "Discover Chat Rooms",
         description: "Connect with like-minded individuals in our engaging chat rooms. Join discussions that matter to you.",
-        image: "public/assets/Chat.png",
+        image: "/assets/Chat.png",
         bgColor: "bg-orange-50"
     },
     {
         title: "Wallet System",
         description: "Securely manage your transactions with our integrated wallet system. Easy-to-use digital features for a seamless experience.",
-        image: "public/assets/Wallet.png",
+        image: "/assets/Wallet.png",
         bgColor: "bg-gray-50"
     },
     {
         title: "Wellbeing Hub",
         description: "Learn about the practices required to maintain optimal wellbeing. Access resources and expert guidance.",
-        image: "public/assets/Checkmark.png",
+        image: "/assets/Checkmark.png",
         bgColor: "bg-gray-50"
     },
     {
         title: "Special Practitioners",
         description: "Connect with certified wellness guides and practitioners. Get personalized support for your journey.",
-        image: "public/assets/Group 13.png",
+        image: "/assets/Group 13.png",
         bgColor: "bg-orange-50"
     }
 ];

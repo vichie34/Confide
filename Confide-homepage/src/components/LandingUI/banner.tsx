@@ -18,7 +18,7 @@ export default function Banner() {
                 <div className="container mx-auto px-4 py-8 flex justify-between items-center">
                     <div className="flex items-center">
                         <img
-                            src="public/assets/confide_logo_dark.png"
+                            src="/assets/confide_logo_dark.png"
                             alt="Confide Logo"
                             className="h-8 w-auto"
                         />
@@ -33,7 +33,7 @@ export default function Banner() {
             <div
                 className="min-h-screen bg-cover bg-center flex items-center justify-center"
                 style={{
-                    backgroundImage: "url('public/assets/confide_background 1.png')",
+                    backgroundImage: "url('/assets/confide_background 1.png')",
                 }}
             >
                 <main className="text-center text-black px-4">
@@ -67,7 +67,7 @@ export default function Banner() {
                             >
                                 <div className="flex">
                                     <img
-                                        src="public/assets/android_logo.png"
+                                        src="/assets/android_logo.png"
                                         alt="Android Logo"
                                         className="w-5 h-5"
                                     />
@@ -80,7 +80,7 @@ export default function Banner() {
                             >
                                 <div className="flex">
                                     <img
-                                        src="public/assets/ios_logo.png"
+                                        src="/assets/ios_logo.png"
                                         alt="iOS Logo"
                                         className="w-5 h-5"
                                     />

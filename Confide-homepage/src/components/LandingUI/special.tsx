@@ -2,30 +2,30 @@ const features = [
     {
         title: "Niche Social Network",
         description: "Over 20 chat rooms dedicated to topics that matter to you - health, fitness, relationships, careers, and more",
-        image: "public/assets/Group 9.png",
+        image: "/assets/Group 9.png",
     },
     {
         title: "Friendly Community",
         description: "Join thoughtful individuals shaping our network through",
-        image: "public/assets/Group 8.png",
+        image: "/assets/Group 8.png",
         color: "bg-orange-100"
     },
     {
         title: "Optimize Your Wellbeing",
         description: "Conveniently enhance your physical and mental wellbeing through meaningful conversations.",
-        image: "public/assets/Group 10.png",
+        image: "/assets/Group 10.png",
         color: "bg-green-100"
     },
     {
         title: "Build Real Friends",
         description: "Thrilled to have you and your friends on board! Whether it's the little details of life or monumental secrets, your contribution is always welcome.",
-        image: "public/assets/Friends meeting in a cafe.png",
+        image: "/assets/Friends meeting in a cafe.png",
         color: "bg-red-100"
     },
     {
         title: "Safe and Secure!",
         description: "Prioritizing safety and security. Confide Community safeguards your anonymity while sharing what matters to you.",
-        image: "public/assets/protection shield with a keyhole.png",
+        image: "/assets/protection shield with a keyhole.png",
         color: "bg-purple-100"
     }
 ];

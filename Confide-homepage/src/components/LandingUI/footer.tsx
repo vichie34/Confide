@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                     <div className="space-y-4 max-w-md">
                         <div className="flex items-center gap-2">
-                            <img src="public/assets/confide_logo_dark.png" alt="Logo_Confide" />
+                            <img src="/assets/confide_logo_dark.png" alt="Logo_Confide" />
                         </div>
                         <p className="text-sm text-gray-600">
                             Join our thriving community today and experience the power of meaningful connections.
