@@ -29,11 +29,12 @@ const features = [
         color: "bg-purple-100"
     }
 ];
-function FeatureCard({ title, description, image, diagonal }: {
+function FeatureCard({ title, description, image, diagonal, isOdd }: {
     title: string;
     description: string;
     image: string;
     diagonal?: boolean; // Determines if the card should be shifted diagonally
+    isOdd: boolean; // Determines if the card is odd-indexed
 }) {
     return (
         <div
@@ -41,11 +42,11 @@ function FeatureCard({ title, description, image, diagonal }: {
                 }`}
         >
             {/* Image */}
-            <div className="flex justify-center md:justify-start">
+            <div className={`flex ${isOdd ? "justify-end" : "justify-start"} w-full md:w-auto`}>
                 <img src={image} alt={title} className="w-20 h-20 md:w-67 md:h-35 object-contain" />
             </div>
             {/* Text */}
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left w-full">
                 <h3 className="font-semibold text-gray-900 mb-4">{title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
             </div>
@@ -69,6 +70,7 @@ function Special() {
                             description={feature.description}
                             image={feature.image}
                             diagonal={index % 2 !== 0} // Shift odd-indexed cards diagonally
+                            isOdd={index % 2 !== 0} // Alternate image alignment
                         />
                     ))}
                 </div>

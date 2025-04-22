@@ -34,14 +34,14 @@ function FeatureCard({ title, description, image, bgColor, customClasses }: {
 }) {
     return (
         <div
-            className={`${bgColor} ${customClasses} md:py-16 md:px-10 flex flex-col md:flex-row items-center md:items-start shadow-lg transition-transform transform hover:scale-105`}
+            className={`${bgColor} ${customClasses} p-4 sm:p-6 md:py-16 md:px-10 flex flex-col md:flex-row sm:items-start md:items-start shadow-lg transition-transform transform hover:scale-105`}
         >
             {/* Image */}
             <div className="mb-4 md:mb-0 md:mr-4">
                 <img src={image} alt={title} className="w-40 h-25 object-contain" />
             </div>
             {/* Text */}
-            <div className="text-center md:text-left">
+            <div className="md:text-left">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
             </div>
@@ -74,7 +74,7 @@ function Connect() {
                         description={features[1].description}
                         image={features[1].image}
                         bgColor={features[1].bgColor}
-                        customClasses="h-[256px] w-full md:w-[520px] rounded-tr-[30px] rounded-br-[30px] rounded-tl-[30px] rounded-bl-none md:ml-[-20px]"
+                        customClasses="h-[256px] w-full md:w-[520px] rounded-tr-[30px] rounded-br-[30px] rounded-tl-[30px] rounded-bl-none md:ml-[-30px]"
                     />
 
                     {/* Second Row */}

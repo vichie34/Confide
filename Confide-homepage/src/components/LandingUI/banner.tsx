@@ -23,7 +23,7 @@ export default function Banner() {
                             className="h-8 w-auto"
                         />
                     </div>
-                    <button className="bg-orange-500 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-orange-600 cursor-pointer transition-colors">
+                    <button className="bg-orange-500 text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-orange-600 cursor-pointer transition-colors">
                         Get Confide App
                     </button>
                 </div>
@@ -31,14 +31,21 @@ export default function Banner() {
 
             {/* Banner */}
             <div
-                className="min-h-screen bg-cover bg-center flex items-center justify-center"
+                className="relative h-[888px] w-full bg-no-repeat bg-center flex justify-center items-center"
                 style={{
                     backgroundImage: "url('/assets/confide_background 1.png')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center -39px",
                 }}
             >
-                <main className="text-center text-black px-4">
-                    <div className="max-w-3xl mx-auto">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                <main
+                    className="absolute text-center text-black px-4"
+                    style={{
+                        top: "17%", // Adjusted for desktop to move the text higher
+                    }}
+                >
+                    <div className="max-w-3xl mx-auto sm:mt-[-10px] md:mt-0">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4">
                             Welcome to Confide Community
                         </h1>
                         <p className="text-lg md:text-xl text-black-200 mb-8">
@@ -51,14 +58,23 @@ export default function Banner() {
                             Download Confide
                         </button>
                     </div>
+                    <style jsx>{`
+                    @media (max-width: 640px) {
+                        main {
+                            top: 10%; /* Adjusted for mobile view to move text even higher */
+                        }
+                    }
+                   `}</style>
                 </main>
             </div>
-
             {/* Modal */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-gradient-to-r from-[#FDECD4] to-[#f5f5f5] bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-gradient-to-r from-[#f5f5f5] to-[#FDECD4] rounded-lg shadow-lg p-6 w-md">
-                        <h2 className="text-xl font-bold mb-4">Select Your OS</h2>
+                        <div className="flex item-center justify-center">
+                            <img src="/assets/confide_logo_dark.png" alt="logo" />
+                        </div>
+                        <h2 className="text-xl font-bold mb-4">Get the App</h2>
                         <p className="text-gray-700 mb-6">Choose your operating system to download the app:</p>
                         <div className="flex justify-between">
                             <button
