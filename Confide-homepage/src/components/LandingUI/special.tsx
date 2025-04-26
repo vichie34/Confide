@@ -43,7 +43,7 @@ function FeatureCard({ title, description, image, diagonal, isOdd }: {
         >
             {/* Image */}
             <div className={`flex ${isOdd ? "justify-end" : "justify-start"} w-full md:w-auto`}>
-                <img src={image} alt={title} className="w-20 h-20 md:w-67 md:h-35 object-contain" />
+                <img src={image} alt={title} className="w-30 h-30 md:w-67 md:h-35 object-contain" />
             </div>
             {/* Text */}
             <div className="text-center md:text-left w-full">

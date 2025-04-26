@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { FaApple, FaAndroid } from "react-icons/fa"; // Import Apple and Android icons
 export default function Banner() {
     const [isModalOpen, setIsModalOpen] = useState(true); // Modal is open by default
 
@@ -68,7 +68,7 @@ export default function Banner() {
                 </main>
             </div>
             {/* Modal */}
-            {isModalOpen && (
+            {/* {isModalOpen && (
                 <div className="fixed inset-0 bg-gradient-to-r from-[#FDECD4] to-[#f5f5f5] bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-gradient-to-r from-[#f5f5f5] to-[#FDECD4] rounded-lg shadow-lg p-6 w-md">
                         <div className="flex item-center justify-center">
@@ -102,6 +102,40 @@ export default function Banner() {
                                     />
                                     <span>iOS</span>
                                 </div>
+                            </button>
+                        </div>
+                        <button
+                            className="mt-4 text-gray-500 hover:text-gray-700 text-sm"
+                            onClick={() => setIsModalOpen(false)}
+                        >
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            )} */}
+            {/* Modal */}
+            {isModalOpen && (
+                <div className="fixed inset-0 bg-gradient-to-r from-[#FDECD4] to-[#f5f5f5] bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-gradient-to-r from-[#f5f5f5] to-[#FDECD4] rounded-lg shadow-lg p-6 w-md">
+                        <div className="flex item-center justify-center">
+                            <img src="/assets/confide_logo_dark.png" alt="logo" />
+                        </div>
+                        <h2 className="text-xl font-bold mb-4">Get the App</h2>
+                        <p className="text-gray-700 mb-6">Choose your operating system to download the app:</p>
+                        <div className="flex justify-between">
+                            <button
+                                className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors flex items-center space-x-2"
+                                onClick={() => handleRedirect("android")}
+                            >
+                                <FaAndroid className="text-xl" /> {/* Android Icon */}
+                                <span>Android</span>
+                            </button>
+                            <button
+                                className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors flex items-center space-x-2"
+                                onClick={() => handleRedirect("ios")}
+                            >
+                                <FaApple className="text-xl" /> {/* Apple Icon */}
+                                <span>iOS</span>
                             </button>
                         </div>
                         <button
