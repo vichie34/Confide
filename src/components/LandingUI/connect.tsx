@@ -153,7 +153,7 @@ function Connect() {
                     <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
                         Ready to start your journey of meaningful connections and community? Join today and experience the power of authentic connections.
                     </p>
-                    <button type="button" className="bg-orange-500 text-black px-8 py-3 rounded-full font-medium hover:bg-orange-600 transition-colors duration-200"
+                    <button type="button" className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-8 py-3 rounded-full font-medium hover:bg-orange-600 transition-colors duration-200"
                         onClick={(e) => handleDownloadClick(e)}
                     >
                         Download Confide

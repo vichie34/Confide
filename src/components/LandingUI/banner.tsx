@@ -59,7 +59,7 @@ export default function Banner() {
                             className="h-8 w-auto"
                         />
                     </div>
-                    <button className="bg-orange-500 text-black px-4 py-2 rounded-full text-sm font-bold hover:bg-orange-600 cursor-pointer transition-colors"
+                    <button className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-orange-600 cursor-pointer transition-colors"
                         onClick={handleDownloadClick}
                     >
                         Get Confide App
@@ -90,25 +90,15 @@ export default function Banner() {
                             Your Space for Meaningful Connections and Conversations
                         </p>
                         <button
-                            className="bg-orange-500 text-black px-6 py-3 cursor-pointer rounded-full text-lg font-medium hover:bg-orange-600 transition-colors"
+                            className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 
+                            text-white px-6 py-3 cursor-pointer rounded-full 
+                            text-lg font-medium hover:opacity-90 transition-all"
                             onClick={handleDownloadClick}
                         >
                             Download Confide
                         </button>
+
                     </div>
-                    {/* 
-                // If you want to add custom styles, use a regular <style> tag or move styles to a CSS file.
-                // Example (uncomment if needed):
-                // <style>
-                // {`
-                // @media (max-width: 640px) {
-                //     main {
-                //         top: 10%;
-                //     }
-                // }
-                // `}
-                // </style>
-                */}
                 </main>
             </div>
             {/* Modal */}
