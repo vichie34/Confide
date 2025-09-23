@@ -96,13 +96,19 @@ export default function Banner() {
                             Download Confide
                         </button>
                     </div>
-                    <style jsx>{`
-                    @media (max-width: 640px) {
-                        main {
-                            top: 10%; /* Adjusted for mobile view to move text even higher */
-                        }
-                    }
-                   `}</style>
+                    {/* 
+                // If you want to add custom styles, use a regular <style> tag or move styles to a CSS file.
+                // Example (uncomment if needed):
+                // <style>
+                // {`
+                // @media (max-width: 640px) {
+                //     main {
+                //         top: 10%;
+                //     }
+                // }
+                // `}
+                // </style>
+                */}
                 </main>
             </div>
             {/* Modal */}
