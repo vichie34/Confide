@@ -2,7 +2,7 @@ const features = [
     {
         title: "Niche Social Network",
         description: "Over 20 chat rooms dedicated to topics that matter to you - health, fitness, relationships, careers, and more",
-        image: "/assets/Group 9.png",
+        image: "/assets/chat-confide.png",
     },
     {
         title: "Friendly Community",
