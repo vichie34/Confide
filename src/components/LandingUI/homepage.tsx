@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <div>
-      <Helmet>
+      {/* <Helmet>
         <title>Confide Community | Build Real Friendships</title>
         <meta
           name="description"
@@ -77,7 +77,7 @@ export default function Home() {
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>
-      </Helmet>
+      </Helmet> */}
 
       <LandingPageHeader />
     </div>

@@ -5,13 +5,13 @@ import { HelmetProvider } from "react-helmet-async";
 
 const App = () => {
   return (
-    <HelmetProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} /> {/* Home page route */}
-        </Routes>
-      </Router>
-    </HelmetProvider>
+    // <HelmetProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Home page route */}
+      </Routes>
+    </Router>
+    // </HelmetProvider>
   );
 };
 
