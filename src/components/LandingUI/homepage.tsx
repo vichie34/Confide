@@ -21,18 +21,18 @@ const LandingPageHeader = () => {
 };
 
 export default function Home() {
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    url: "https://www.confidecommunity.com",
-    logo: "https://www.confidecommunity.com/assets/confide_logo_dark.png",
-    name: "Confide Community",
-    sameAs: [
-      "https://twitter.com/ConfideCommunity",
-      "https://www.facebook.com/ConfideCommunity",
-      //   "https://www.linkedin.com/company/confidecommunity",
-    ],
-  };
+  // const organizationSchema = {
+  //   "@context": "https://schema.org",
+  //   "@type": "Organization",
+  //   url: "https://www.confidecommunity.com",
+  //   logo: "https://www.confidecommunity.com/assets/confide_logo_dark.png",
+  //   name: "Confide Community",
+  //   sameAs: [
+  //     "https://twitter.com/ConfideCommunity",
+  //     "https://www.facebook.com/ConfideCommunity",
+  //     //   "https://www.linkedin.com/company/confidecommunity",
+  //   ],
+  // };
 
   return (
     <div>
