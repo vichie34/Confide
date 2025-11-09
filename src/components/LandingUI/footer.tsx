@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Twitter, Globe } from "lucide-react";
+import { Instagram, Facebook, Twitter, Globe } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,16 +40,22 @@ export default function Footer() {
             </nav>
 
             <div className="flex items-center space-x-4 mt-4">
-              <a href="#" aria-label="Globe">
+              {/* <a href="#" aria-label="Globe">
                 <Globe className="h-4 w-4 text-gray-500 hover:text-gray-700" />
-              </a>
-              <a href="#" aria-label="Twitter">
+              </a> */}
+              <a href="https://x.com/confidecommunit" aria-label="Twitter">
                 <Twitter className="h-4 w-4 text-gray-500 hover:text-gray-700" />
               </a>
-              <a href="#" aria-label="Facebook">
+              <a
+                href="https://web.facebook.com/ConfideCommunity/"
+                aria-label="Facebook"
+              >
                 <Facebook className="h-4 w-4 text-gray-500 hover:text-gray-700" />
               </a>
-              <a href="#" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/confidecomunity/"
+                aria-label="Instagram"
+              >
                 <Instagram className="h-4 w-4 text-gray-500 hover:text-gray-700" />
               </a>
             </div>
