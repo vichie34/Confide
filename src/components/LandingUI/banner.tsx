@@ -13,7 +13,7 @@ export default function Banner() {
   const detectOS = () => {
     if (typeof navigator === 'undefined') return null;
     const ua =
-      navigator.userAgent || navigator.vendor || (window as any).opera || '';
+      navigator.userAgent || navigator.vendor || (window as any).opera || ' ';
     // iOS detection
     if (/iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream) {
       return 'ios';
